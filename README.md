@@ -1,16 +1,72 @@
-# my_first_app
+# UNIPOOL (Flutter Project)
 
-A new Flutter project.
+UNIPOOL is a Flutter mobile application.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 Requirements (Must Install First)
 
-A few resources to get you started if this is your first Flutter project:
+### 1. Flutter SDK  
+Download & install Flutter:  
+https://docs.flutter.dev/get-started/install
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 2. Android Studio  
+Download & install Android Studio:  
+https://developer.android.com/studio
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Inside Android Studio, make sure these are installed:
+- Android SDK  
+- Android SDK Platform  
+- Android SDK Build-Tools  
+- Android Emulator  
+- Device Manager  
+
+### 3. VS Code Extensions (Required)
+Install these in VS Code:
+- **Flutter** (by Dart-Code)  
+- **Dart** (by Dart-Code)  
+- **Error Lens** *(optional but helpful)*  
+- **Material Icon Theme** *(optional)*
+
+---
+
+## 🔧 How to Run the Project
+
+### Step 1 — Clone the repository
+
+### Step 2 — Open the project  
+Open the UNIPOOL folder in **VS Code**.
+
+### Step 3 — Install dependencies  
+Run:
+flutter doctor
+Install anything marked with **X**.
+
+Then:
+flutter pub get
+
+---
+
+## Step 4 — Recommended Emulator (Android Studio)
+
+This project was tested on:
+
+- **Device:** Pixel 3  
+- **API Level:** 36  
+- **Android Version:** Android 16 (Baklava)  
+- **System Image:** Google Play  
+- **Architecture:** Intel x86_64 (Atom)
+
+✔ Fast and less laggy  
+✔ Stable with Flutter  
+✔ Good for low-end & mid-range PCs
+
+To start emulator:  
+Android Studio → Device Manager → Run Pixel 3
+
+---
+
+## Step 5 — Run the App in VScode
+in terminal:
+Flutter run
+
