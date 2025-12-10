@@ -1,9 +1,12 @@
 plugins {
-  // ...
+    // Android Gradle plugin
+    id("com.android.application") version "8.1.2" apply false
 
-  // Add the dependency for the Google services Gradle plugin
-  id("com.google.gms.google-services") version "4.4.4" apply false
+    // Google Services Gradle plugin (correct modern version)
+    id("com.google.gms.google-services") version "4.4.1" apply false
 
+    // Kotlin
+    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
 }
 
 allprojects {
@@ -13,17 +16,7 @@ allprojects {
     }
 }
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath("com.google.gms:google-services:4.3.15")
-        classpath("com.android.tools.build:gradle:7.4.2")
-    }
-}
-
+// Fix build directory
 val newBuildDir: Directory =
     rootProject.layout.buildDirectory
         .dir("../../build")
@@ -34,6 +27,7 @@ subprojects {
     val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
     project.layout.buildDirectory.value(newSubprojectBuildDir)
 }
+
 subprojects {
     project.evaluationDependsOn(":app")
 }
