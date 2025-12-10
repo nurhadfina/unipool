@@ -45,6 +45,7 @@ dependencies:
   intl_phone_field: ^3.2.0
   month_year_picker: ^0.5.0+1
   country_code_picker: ^3.0.0
+  file_picker: ^8.0.7
 
 dev_dependencies:
   flutter_test:
