@@ -39,6 +39,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
+      localizationsDelegates: const [
+        MonthYearPickerLocalizations.delegate,
+      ],
+
       // Start screen first
       home: const StartPage(),
     );
