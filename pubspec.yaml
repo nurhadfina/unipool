@@ -36,9 +36,15 @@ dependencies:
   cupertino_icons: ^1.0.8
   
   # Firebase
-  firebase_core: ^2.24.0
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.0.0
   firebase_messaging: ^14.6.0
   flutter_local_notifications: ^16.1.0
+
+  intl_phone_field: ^3.2.0
+  month_year_picker: ^0.5.0+1
+  country_code_picker: ^3.0.0
 
 dev_dependencies:
   flutter_test:
