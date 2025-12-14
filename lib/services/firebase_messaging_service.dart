@@ -11,6 +11,8 @@ class FirebaseMessagingService {
 
   FirebaseMessagingService._internal();
 
+  bool _isInitialized = false; 
+
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
   final FlutterLocalNotificationsPlugin _flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
