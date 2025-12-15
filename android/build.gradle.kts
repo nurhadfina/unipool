@@ -1,6 +1,7 @@
 plugins {
     // Android Gradle plugin
     id("com.android.application") version "8.1.2" apply false
+    id("com.android.library") version "8.1.2" apply false
 
     // Google Services Gradle plugin (correct modern version)
     id("com.google.gms.google-services") version "4.4.1" apply false
