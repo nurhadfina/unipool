@@ -20,6 +20,7 @@ void main() async {
   
   // Initialize Firebase
   await Firebase.initializeApp(
+    name: 'main_ui_app',
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
