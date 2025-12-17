@@ -1,14 +1,12 @@
 plugins {
-    // Android Gradle plugin
+    // Android Application plugin
+    id("com.android.application") version "8.11.1" apply false
 
-    id("com.android.application") version "8.1.2" apply false
-    id("com.android.library") version "8.1.2" apply false
+    // Kotlin plugin (modern DSL)
+    kotlin("android") version "1.9.10" apply false
 
-    // Google Services Gradle plugin (correct modern version)
+    // Google Services plugin
     id("com.google.gms.google-services") version "4.4.1" apply false
-
-    // Kotlin
-    id("org.jetbrains.kotlin.android") version "2.2.20" apply false
 }
 
 allprojects {
@@ -18,7 +16,6 @@ allprojects {
     }
 }
 
-// Fix build directory
 val newBuildDir: Directory =
     rootProject.layout.buildDirectory
         .dir("../../build")

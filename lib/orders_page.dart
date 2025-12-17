@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:http/http.dart' as http;
 
-import 'bottom_nav.dart';
 
 class OrdersPage extends StatefulWidget {
   const OrdersPage({super.key});
